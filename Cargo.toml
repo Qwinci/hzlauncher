@@ -1,0 +1,20 @@
+[package]
+name = "hzlauncher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iced = { git = "https://github.com/iced-rs/iced", features = ["tokio"] }
+iced_aw = { git = "https://github.com/iced-rs/iced_aw", features = ["modal", "card"] }
+tokio = { version = "1.35.1", features = ["fs", "process"] }
+reqwest = { version = "0.11.23", features = ["native-tls"] }
+oauth2 = "4.4.2"
+webbrowser = "0.8.12"
+serde = { version = "1.0.194", features = ["derive"] }
+serde_json = "1.0.111"
+toml = "0.8.8"
+time = { version = "0.3.31", features = ["local-offset", "macros", "formatting"] }
+aho-corasick = "1.1.2"
+litcrypt2 = { git = "https://github.com/Kudaes/litcrypt.rs", rev = "d22782c18009cb3dfcbe2355d397e03ebfbeba8b" }
